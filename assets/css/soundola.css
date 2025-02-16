@@ -1,0 +1,169 @@
+html,
+body,
+input[type="radio"] {
+  margin-top: -1px;
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+pre {
+  border: 1px solid whitesmoke;
+  border-radius: 3px;
+  padding: 10px;
+  /* ... something here for input ...
+  // ... something here for output ...*/
+}
+
+.card-body { text-align: left;}
+.card-body > p { margin:20px 20px; }
+
+.version {
+  color: #a09d9d;
+}
+
+/* center image for presentation page */
+.pp-ci {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+.pp-ci > img {
+  height: 300px;
+}
+
+/* screenshots - lab answers */
+.la-ss {
+  text-align: left;
+  font-style: italic;
+  margin: 20px;
+}
+.la-ss > img {
+  height: 250px;
+  border: 1px solid gray;
+  margin-bottom: 10px;
+}
+
+/* in your own words - questions */
+.la-q {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+/* subclass responses */
+.s {
+  margin-left: 20px;
+}
+
+/*text caption*/
+.lf {
+  text-align: center;
+  font-style: italic;
+}
+
+/* reference table */
+/* section labels */
+.rev-sl {
+  color: #484848;
+  background-color: rgb(197, 235, 175);
+  width: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+/* revit actions */
+.rev-ra {
+  color: #484848;
+  background-color: rgb(252, 248, 59);
+  width: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+/* properties */
+.rev-pr {
+  color: #484848;
+  background-color: rgb(247, 158, 182);
+  width: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+/* keypresses */
+.ad-kp {
+  color: #484848;
+  background-color: rgb(170, 205, 252);
+  width: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+/* revit object */
+.rev-ro {
+  color: #484848;
+  background-color: rgb(183, 148, 248);
+  width: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+/* items to remember */
+.ir > li {
+  margin: 3px 0px;
+  padding-bottom: 7px;
+}
+
+/* file-name */
+.fn {
+  background-color: rgb(185, 185, 185);
+  color: black;
+  width: 5px;
+  padding: 5px;
+  margin: 5px;
+  font-family: Consolas 10px;
+}
+
+/* highlight term */
+.ht {
+  background-color: rgb(89, 89, 89);
+  padding: 5px;
+  margin: 5px;
+}
+
+/* pills */
+.pl {
+  padding: 1px 2px 2px 2px;
+  margin: 1px 1px 2px 0px;
+  border-radius: 5px;
+  border: 1px solid rgb(87, 87, 87);
+}
+
+/* center last page hr rule */
+.lp-ci {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+/* hr {
+  border-top: 1px solidrgb(94, 94, 94);
+  width: 600px;
+} */
+
+.nb {
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(0, 140, 255);
+  text-align: justify;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.nb > img {
+  margin-top: 10px;
+}
+
+p.n {
+  line-height: 1.7;
+}

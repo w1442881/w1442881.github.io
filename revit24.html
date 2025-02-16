@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Title here - engineering design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/assets/css/desgn-page.css" />
+    <link rel="stylesheet" href="/assets/css/desgn-lab.css" />
+    <link rel="manifest" href="/assets/json/manifest.json">
+    <link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<body class="container">
+    <div id="nav">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <span class="fs-4">Aldo's engineering documentation</span>
+            </a>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Project
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item " href="/projects.html">Projects</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item " href="/software.html">Software</a></li>
+                        <li><a class="dropdown-item " href="/courses.html">Courses</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="/learning.html" class="nav-link"
+                        aria-current="page">Learning</a></li>
+                <li class="nav-item"><a href="/reference.html" class="nav-link "
+                        aria-current="page">Reference</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Portfolios
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item " href="/desgn-301-portfolio.html">DESGN 301</a>
+                        </li>
+                        <li><a class="dropdown-item " href="/desgn-302-portfolio.html">DESGN 302</a>
+                        </li>
+                        <li><a class="dropdown-item " href="/desgn-328-portfolio.html">DESGN 328</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+    </div>
+
+    <h1>Autodesk Revit 2024</h1>
+
+    <h2>Procedures</h2>
+
+    <p id="open-a-new-file">Open a new file in Revit:
+    <ol>
+        <li>Open Revit ✔</li>
+        <li>Select <span class="ad-sl pl">New...</span>, under models on the left side of the screen ✔</li>
+        <br />
+        <img width="400" src="/assets/img/DESGN/Revit24/new-project-highlights.jpg" />
+    </ol>
+    </p>
+
+    <p id="open-new-file-with-template">Open a new file in Revit using a Default project template:
+    <ol>
+        <li>Follow instructions <a href="#open-a-new-file">above</a> to open a new file ✔</li>
+        <li>Select <span class="fn pl">default.rte</span> ✔</li>
+        <br /><img width="430" src="/assets/img/DESGN/Revit24/default-rte-template.jpg" />
+    </ol>
+
+    </p>
+
+    <p class="n" id="massing-and-site-tab">Find the <span class="ad-sl pl">Massing & Site</span> tab:
+        <br />
+        <img width="630" src="/assets/img/DESGN/Revit24/massing-and-site-tab.jpg" />
+
+    </p>
+
+    <p class="n" id="select-property-lines">Select the<span class="ad-acc pl">Property lines</span> button
+        in <span class="ad-sl pl"><a href="#massing-and-site-tab">Massing & Site</a></span> tab.
+        <br />
+        <img width="330" src="/assets/img/DESGN/Revit24/property-line-create.jpg" />
+
+    </p>
+   
+    <p class="n" id="property-line-entering-distances">Select the<span class="ad-acc pl">Create by entering distances and bearings</span> button
+        in <span class="ad-acc pl"><a href="#select-property-lines">Property lines</a></span> buton in the
+        <span class="ad-sl pl"><a href="#massing-and-site-tab">Massing & Site</a></span> tab.
+        <br />
+        <img width="430" src="/assets/img/DESGN/Revit24/property-line-enter-form.jpg" />
+
+    </p> 
+    
+
+    <h2>Revit keyword reference</h2>
+
+    <h3>Commonly used commands</h3>
+
+    <p class=n>These are commonly used commands in order of appearance and grouped by category</p>
+
+
+    <br />
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col">
+                    <h4>Calculate, Query, and Measure Geometric Values</h4>
+                    <table>
+                        <tr>
+                            <th>Acronym</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>DI</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>ID</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>ME</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>QC</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>QU</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AR</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>CA</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>DI</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>LI</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>MA</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>PE</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>ST</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>CA</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>DL</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>QC</td>
+                            <td>description...</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4>Action macros</h4>
+                    <table>
+                        <tr>
+                            <th>Acronym</th>
+                            <th>Command name</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td><a target="_blank"
+                                    href="https://help.autodesk.com/view/ACD/2025/ENU/?guid=GUID-F2AC63E6-7DA4-4501-A6A7-BC152392256C">AB</a>
+                                ↗|
+                            </td>
+                            <td>ACTBASEPOINT</td>
+                            <td>Inserts a base point or base point prompt in an action macro.</td>
+                        </tr>
+                        <tr>
+                            <td>AM</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AP</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AR</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AS</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AU</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AB</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AM</td>
+                            <td>description...</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col">
+                    <h4>Attributes</h4>
+                    <table>
+                        <tr>
+                            <th>Acronym</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>AD</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AD</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AD</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AE</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AI</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AO</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AR</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AS</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BA</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BA</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>EA</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>GA</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AF</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AE</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AI</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AI</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AM</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AM</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AR</td>
+                            <td>description...</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4>Blocks</h4>
+                    <table>
+                        <tr>
+                            <td>BA</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BC</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BE</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BL</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BS</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>IE</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>WB</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BB</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BT</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>B?</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BM</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BN</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BR</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BS</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BL</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BR</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BT</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BU</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BV</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>CO</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>CA</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>CC</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>CF</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>CL</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>CN</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>CT</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>EA</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>IE</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>IN</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>PL</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>PS</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>RE</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>SC</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>XL</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>AP</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BC</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BD</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BE</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BG</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BP</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BS</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>BS</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>CI</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>CC</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>CC</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>CE</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>CE</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>CN</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>CP</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>CS</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>DX</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>EA</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>IB</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>IU</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>IU</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>IU</td>
+                            <td>description...</td>
+                        </tr>
+                        <tr>
+                            <td>WB</td>
+                            <td>description...</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <br />
+    <div style="text-align: left;" class="version">v. 0.01 (2/10/25) &middot; &copy; aldo/w1442881 2025 &middot; All
+        rights reserved</div>
+    <footer>
+        <script src="https://unpkg.com/@popperjs/core@2" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <!-- <script src="/assets/js/nav-graph.js"></script> -->
+    </footer>
+</body>
+
+</html>

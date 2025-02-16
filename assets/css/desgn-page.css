@@ -1,0 +1,210 @@
+html,
+body,
+#sigma-container {
+  width: 100%;
+  height: 600px;
+  /* overflow: hidden; */
+  font: 12px Arial;
+}
+
+#sigma-container {
+  /* background-color: #8b8b8b;*/
+}
+
+input[type="radio"] {
+  margin-top: -1px;
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+pre {
+  border: 1px solid whitesmoke;
+  border-radius: 3px;
+  padding: 10px;
+  /* ... something here for input ...
+  // ... something here for output ...*/
+}
+
+.version {
+  color: #a09d9d;
+}
+
+/* center image for presentation page */
+.pp-ci {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+.pp-ci > img {
+  height: 300px;
+}
+
+/* screenshots - lab answers */
+.la-ss {
+  text-align: left;
+  font-style: italic;
+  margin: 20px;
+}
+.la-ss > img {
+  height: 250px;
+  border: 1px solid gray;
+  margin-bottom: 10px;
+}
+
+/* in your own words - questions */
+.la-q {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+/* subclass responses */
+.s {
+  margin-left: 20px;
+}
+
+/*text caption*/
+.lf {
+  text-align: center;
+  font-style: italic;
+}
+
+/* reference table */
+/* section labels */
+.ad-sl {
+  color: #484848;
+  background-color: rgb(197, 235, 175);
+  width: 3px;
+  padding: 2px;
+  margin: 3px;
+}
+/* revit actions */
+.ad-acc {
+  color: #484848;
+  background-color: rgb(252, 248, 59);
+  width: 3px;
+  padding: 2px;
+  margin: 3px;
+}
+/* properties */
+.ad-prop {
+  color: #484848;
+  background-color: rgb(247, 158, 182);
+  width: 3px;
+  padding: 2px;
+  margin: 3px;
+}
+/* keypresses */
+.ad-kp {
+  color: #484848;
+  background-color: rgb(170, 205, 252);
+  width: 3px;
+  padding: 2px;
+  margin: 3px;
+}
+/* revit object */
+.ad-obj {
+  color: #484848;
+  background-color: rgb(183, 148, 248);
+  width: 3px;
+  padding: 2px;
+  margin: 3px;
+}
+/* items to remember */
+.ir > li {
+  margin: 3px 0px;
+  padding-bottom: 7px;
+  line-height:1.5em;
+}
+
+/* file-name */
+.fn {
+  background-color: rgb(185, 185, 185);
+  color: black;
+  width: 3px;
+  padding: 3px;
+  margin: 3px;
+  font: Consolas 10px;
+}
+
+/* highlight term */
+.ht {
+  background-color: rgb(89, 89, 89);
+  padding: 5px;
+  margin: 5px;
+}
+
+/* pills */
+.pl {
+  /* padding: 1px 2px 2px 2px; 
+  margin: 0px;*/
+  border-radius: 5px;
+  border: 1px solid rgb(87, 87, 87);
+}
+
+/* .pl > a {
+    text-decoration:none; 
+    color: blue; 
+    /* border-bottom: dotted 1px blue;  * /
+    
+} */
+
+/* center last page hr rule */
+.lp-ci {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+/* hr {
+  border-top: 1px solidrgb(94, 94, 94);
+  width: 600px;
+} */
+
+.nb {
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(0, 140, 255);
+  text-align: justify;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.nb > img {
+  margin-top: 10px;
+}
+
+p {
+  line-height: 1.7;
+  
+}
+
+p > img, li > img { margin-top:10px; }
+
+.card-body > p { text-align: left; margin-bottom:0rem;}
+
+a { text-decoration: none;}
+
+.pl > a {
+    text-decoration: none; /* Remove the default underline */
+    /* border-bottom: 1px dotted; Add a dotted underline */
+    padding-bottom: 0px; /* Optional: add some space between text and underline */
+    background-image: linear-gradient(to right, black 50%, rgba(255,255,255,0) 0%);
+    background-position: bottom;
+    background-size: 0px 1px;
+    background-repeat: repeat-x;
+    color: blue;
+
+}
+
+a:hover {
+    text-decoration: underline; /* Add a solid underline on hover */
+    border-bottom: none; /* Keep the dotted underline */
+    background-image: none;
+}
